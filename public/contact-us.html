@@ -1,0 +1,140 @@
+<!Doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Atharva Portfolio</title>
+	<link rel="stylesheet" href="css/style.css" type="text/css">
+	<link rel="stylesheet" href="css/loader.css" type="text/css">
+	<link rel="stylesheet" href="css/responsive.css" type="text/css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+	<script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
+	<script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+</head>
+<body>
+
+	<header class="site-header">
+		<div class="header-main desktop-view">
+			<div class="main-image">
+				<img src="./uploads/main-logo.jpg" />
+				<h1>Atharva Pujari</h1>
+			</div>
+			<div id="menu-section" class="menu-section">
+				<ul class="nav">
+					<li class="menu-item menu-home"><a href="index.html"><i class="fa-solid fa-house"></i>Home</a></li>
+					<li class="menu-item menu-about"><a href="about.html"><i class="fa-solid fa-user"></i>About me</a></li>
+					<li class="menu-item menu-resume"><a href="resume.html"><i class="fa-solid fa-book-bookmark"></i>Resume</a></li>
+					<li class="menu-item menu-portfolio"><a href="portfolio.html"><i class="fa-solid fa-briefcase"></i>Portfolio</a></li>
+					<li class="menu-item menu-contact"><a href="contact-us.html" class="active"><i class="fa-solid fa-envelope"></i>Contact</a></li>
+				</ul>
+			</div>
+			<div class="social-icon">
+				<ul>
+					<li><a href="https://ne-np.facebook.com/atharv.pujari.35/" target="_blank"><i class="fa-brands fa-facebook-square"></i></a></li>
+					<li><a href="https://www.instagram.com/atharvapujari13/?hl=en" target="_blank"><i class="fa-brands fa-instagram-square"></i></a></li>
+					<li><a href="https://in.linkedin.com/in/atharva-pujari-79376b22b?" target="_blank"><i class="fa-brands fa-linkedin"></i></a></li>
+					<li><a href="#"><i class="fa-brands fa-twitter-square"></i></a></li>
+				</ul>
+			</div>
+			<div class="copyright-section">
+				<p>2022 © SAP-Themes.<br>All Right Reserved.</p>
+			</div>
+		</div>
+
+		<div class="mobile-view">
+			<div class="mobmenu-section">
+				<h2>ATHARVA PUJARI</h2>
+				<button id="nav-toggle"></button>
+			</div>
+			<div class="nav-toggle">
+				<div class="main-image">
+					<img src="./uploads/main-logo.jpg" />
+				</div>
+				<div id="menu-section" class="menu-section">
+					<ul class="nav">
+						<li class="menu-item menu-home"><a href="index.html"><i class="fa-solid fa-house"></i>Home</a></li>
+						<li class="menu-item menu-about"><a href="about.html"><i class="fa-solid fa-user"></i>About me</a></li>
+						<li class="menu-item menu-resume"><a href="resume.html"><i class="fa-solid fa-book-bookmark"></i>Resume</a></li>
+						<li class="menu-item menu-portfolio"><a href="portfolio.html"><i class="fa-solid fa-briefcase"></i>Portfolio</a></li>
+						<li class="menu-item menu-contact"><a href="contact-us.html" class="active"><i class="fa-solid fa-envelope"></i>Contact</a></li>
+					</ul>
+				</div>
+				<div class="social-icon">
+					<ul>
+						<li><a href="https://ne-np.facebook.com/atharv.pujari.35/" target="_blank"><i class="fa-brands fa-facebook-square"></i></a></li>
+						<li><a href="https://www.instagram.com/atharvapujari13/?hl=en" target="_blank"><i class="fa-brands fa-instagram-square"></i></a></li>
+						<li><a href="https://in.linkedin.com/in/atharva-pujari-79376b22b?" target="_blank"><i class="fa-brands fa-linkedin"></i></a></li>
+						<li><a href="#"><i class="fa-brands fa-twitter-square"></i></a></li>
+					</ul>
+				</div>
+				<div class="copyright-section">
+					<p>2022 © DAP-Themes.<br>All Right Reserved.</p>
+				</div>
+			</div>
+		</div>
+	</header>
+	
+<!-------------------------------------------------------
+	CONTACT SECTION
+-------------------------------------------------------->		
+	
+	<section id="demo-content" class="contact-us">
+		<div id="loader-wrapper">
+			<div class="loader-section section-left"></div>
+            <div class="loader-section section-right"></div>
+		</div>
+		<div class="container">
+			<div class="about-title">
+				<h2>Contact us.</h2>
+			</div>
+			<div class="about-service contact-form">
+				<h3>Let's Talk</h3>
+				<form method="POST" action="/sign_up" netlify>
+				<ul>
+					<li>
+						<label>Name</label>
+						<input minlength="3" type="text" id="name" name="name" placeholder="Name" required>
+					</li>
+					<li>
+						<label>Email</label>
+						<input type="email" id="email" name="email" placeholder="Email" required>
+					</li>
+					<li class="message">
+						<label>How can we help you?</label>
+						<textarea id="subject" name="subject" placeholder="How can we help you?" style="height:200px"></textarea>
+					</li>
+				</ul>
+				<p><input id="submit" class="button-anime" type="submit" value="SEND MESSAGE"></p>
+				</form>
+			</div>
+			<div class="locatemail-phone">
+				<ul>
+					<li>
+						<i class="fa-solid fa-paper-plane"></i>
+						atharvaa13p@gmail.com
+					</li>
+					<li>
+						<i class="fa-solid fa-location-dot"></i>
+						Jogeshwari, Mumbai, INDIA
+					</li>
+					<li>
+						<i class="fa-solid fa-phone-flip"></i>
+						(+91) 98204 21989
+					</li>
+				</ul>
+			</div>
+			<div class="map-content">
+			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d30155.349668874613!2d72.84343589314848!3d19.13314066664741!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7b63b76f3de9b%3A0x1e1d1cd27f00b1f8!2sJogeshwari%20East%2C%20Mumbai%2C%20Maharashtra!5e0!3m2!1sen!2sin!4v1671124449054!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+			</div>
+		</div>
+	</section>
+	
+<!-------------------------------------------------------
+	END
+-------------------------------------------------------->		
+
+<script src="scripts/script.js"></script>
+<script src="scripts/index.js"></script>
+</body>
+</html>
