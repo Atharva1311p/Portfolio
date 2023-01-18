@@ -1,0 +1,146 @@
+/*----------------------------- Small Laptop -------------------------------*/
+@media only screen and (max-width :1280px) {
+    .social-icon {
+        padding: 30px 0px 5px;
+    }
+
+}
+
+/*----------------------------- Media 1024 -------------------------------*/
+@media only screen and (max-width :1100px) {
+    header.site-header {
+        width: 18%;
+    }
+    .main-image h1 {
+        font-size: 18px;
+    }
+    .menu-section li a {
+        font-size: 14px;
+    }
+    section.home, section.about-me, section.resume, section.contact-us, section.portfolio {
+        width: 82%;
+    }
+    .container {
+        max-width: 90%;
+    }
+
+
+    /*==============================
+	    HOME
+    ==============================*/
+    section.home img {
+        width: auto;
+        height: 100vh;
+    }
+
+
+    /*==============================
+	    ABOUT
+    ==============================*/
+    .about-left-content {
+        width: 54%;
+    }
+    .about-right-content {
+        width: 42%;
+        margin-left: 20px;
+    }
+
+}
+
+/*----------------------------- Media 768 -------------------------------*/
+@media only screen and (max-width:999px){
+    header.site-header {
+        width: 25%;
+    }
+    section.home, section.about-me, section.resume, section.contact-us, section.portfolio {
+        width: 75%;
+    }
+    
+
+    /*==============================
+	    ABOUT
+    ==============================*/
+    .about-left-content, .about-right-content {
+        width: 100%;
+    }
+    .about-right-content {
+        margin: 40px 0 0 0;
+    }
+    .about-right-content li {
+        display: inline-block;
+        position: relative;
+        margin: 0 5px 15px;
+        padding: 0 5px;
+    }
+    .about-service ul {
+        grid-template-columns: repeat(2 ,1fr);
+        grid-gap: 50px 20px;
+    }
+
+
+    /*==============================
+	    RESUME
+    ==============================*/
+    .resume-main-content {
+        grid-template-columns: repeat(1 ,1fr);
+        grid-gap: 10px;
+    }
+    .resume-main-content .about-service {
+        padding: 10px 0 0;
+    }
+    
+
+
+
+
+}
+
+/*----------------------------- Media 480 -------------------------------*/
+@media only screen and (max-width:767px){
+    .desktop-view {
+        display: none;
+    }
+    .mobile-view {
+        display: block;
+    }
+    .nav-toggle .social-icon {
+        margin-top: 80%;
+    }
+    section.home, section.about-me, section.resume, section.contact-us, section.portfolio {
+        width: 100%;
+        margin: 0 0 0 auto;
+        position: relative;
+    }
+    section.about-me, section.resume, section.contact-us, section.portfolio {
+        padding: 90px 0 20px;
+    }
+    
+
+
+
+    /*==============================
+	    PORTFOLIO
+    ==============================*/
+    section.portfolio {
+        height: 100vh;
+        overflow: auto;
+    }
+
+
+    /*==============================
+	    CONTACT US
+    ==============================*/
+    .contact-form ul {
+        grid-gap: 20px 20px;
+        margin: 30px 0;
+        width: 100%;
+    }
+    .contact-form ul, .locatemail-phone ul {
+        grid-template-columns: repeat(1 ,1fr);
+    }
+}
+
+/*----------------------------- Media 320 -------------------------------*/
+@media only screen and (max-width:479px){
+    
+}
